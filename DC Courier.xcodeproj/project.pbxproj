@@ -12,7 +12,26 @@
 		A71499FE21A9DF84005B4110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71499FC21A9DF84005B4110 /* Main.storyboard */; };
 		A7149A0021A9DF85005B4110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71499FF21A9DF85005B4110 /* Assets.xcassets */; };
 		A7149A0321A9DF85005B4110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7149A0121A9DF85005B4110 /* LaunchScreen.storyboard */; };
+		A7149A0F21A9F3F4005B4110 /* Alamofire.framework in Headers */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
+		A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7A6C3AB21AAFB5E00E700D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; };
+		A7A6C3AC21AAFB5E00E700D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7149A1421A9FFD2005B4110 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */,
+				A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A71499F521A9DF84005B4110 /* DC Courier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DC Courier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +41,8 @@
 		A71499FF21A9DF85005B4110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7149A0221A9DF85005B4110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7149A0421A9DF85005B4110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7149A0B21A9EEE1005B4110 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A6C3AB21AAFB5E00E700D2 /* SwiftyJSON.framework in Frameworks */,
+				A7A6C3AC21AAFB5E00E700D2 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,7 @@
 			children = (
 				A71499F721A9DF84005B4110 /* DC Courier */,
 				A71499F621A9DF84005B4110 /* Products */,
+				A7149A0A21A9EEE1005B4110 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,16 +88,39 @@
 			path = "DC Courier";
 			sourceTree = "<group>";
 		};
+		A7149A0A21A9EEE1005B4110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */,
+				A7149A0B21A9EEE1005B4110 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A7149A0E21A9F3EB005B4110 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7149A0F21A9F3F4005B4110 /* Alamofire.framework in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		A71499F421A9DF84005B4110 /* DC Courier */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7149A0721A9DF85005B4110 /* Build configuration list for PBXNativeTarget "DC Courier" */;
 			buildPhases = (
+				A7149A0E21A9F3EB005B4110 /* Headers */,
 				A71499F121A9DF84005B4110 /* Sources */,
 				A71499F221A9DF84005B4110 /* Frameworks */,
 				A71499F321A9DF84005B4110 /* Resources */,
+				A7149A0D21A9EF03005B4110 /* ShellScript */,
+				A7149A1421A9FFD2005B4110 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -96,6 +143,11 @@
 				TargetAttributes = {
 					A71499F421A9DF84005B4110 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +181,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7149A0D21A9EF03005B4110 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A71499F121A9DF84005B4110 /* Sources */ = {
@@ -284,7 +358,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26SU2NX6X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DC Courier/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "DC.DC-Courier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +381,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26SU2NX6X6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "DC Courier/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "DC.DC-Courier";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,129 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DC_Courier" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMT-7K-4fJ">
+                                <rect key="frame" x="69" y="34" width="290" height="30.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKL-j1-K86">
+                                <rect key="frame" x="16" y="39" width="45" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите телефон (+7)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCT-2e-t28">
+                                <rect key="frame" x="69" y="81.5" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-3z-lfs">
+                                <rect key="frame" x="16" y="86.5" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ввеите имя курьерафвыфаыафвафвафвафвафв" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ngm-Zs-eAF">
+                                <rect key="frame" x="20" y="161" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPy-fE-7y0">
+                                <rect key="frame" x="16" y="119" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.64999884366989136" green="0.79830765724182129" blue="0.30183151364326477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <state key="normal" title="Создать курьера">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnClickCreateCourier:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1t-5c-uiR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wv7-OQ-wv8">
+                                <rect key="frame" x="16" y="200" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.64999884370000005" green="0.79830765719999996" blue="0.30183151359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <state key="normal" title="Обновлять">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnUpdateLocationClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qdh-81-NlU"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-3f-s6B">
+                                <rect key="frame" x="16" y="269" width="343" height="378"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ngm-Zs-eAF" secondAttribute="trailing" constant="16" id="1SE-sm-3sY"/>
+                            <constraint firstItem="wv7-OQ-wv8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="26F-HN-jcM"/>
+                            <constraint firstItem="Ngm-Zs-eAF" firstAttribute="top" secondItem="IPy-fE-7y0" secondAttribute="bottom" constant="8" id="3QZ-sb-aIk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tCT-2e-t28" secondAttribute="trailing" constant="16" id="5WK-hs-sNy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wv7-OQ-wv8" secondAttribute="trailing" constant="16" id="664-0a-rZH"/>
+                            <constraint firstItem="bKL-j1-K86" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="893-rk-yu8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VMT-7K-4fJ" secondAttribute="trailing" constant="16" id="Bu5-Vf-8Iv"/>
+                            <constraint firstItem="bKL-j1-K86" firstAttribute="leading" secondItem="KeS-3z-lfs" secondAttribute="leading" id="Ft4-At-7dG"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="leading" secondItem="tCT-2e-t28" secondAttribute="leading" id="HTS-vr-JiR"/>
+                            <constraint firstItem="bKL-j1-K86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hgp-QV-dyq"/>
+                            <constraint firstItem="wv7-OQ-wv8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="Id0-1A-xPc"/>
+                            <constraint firstItem="tCT-2e-t28" firstAttribute="top" secondItem="VMT-7K-4fJ" secondAttribute="bottom" constant="17" id="PWC-U2-iWr"/>
+                            <constraint firstItem="KeS-3z-lfs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Q92-ZT-7fe"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="trailing" secondItem="tCT-2e-t28" secondAttribute="trailing" id="UDE-FK-29d"/>
+                            <constraint firstItem="IPy-fE-7y0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="WP9-Cs-ema"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="a58-G3-NvF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IPy-fE-7y0" secondAttribute="trailing" constant="16" id="cVc-ZQ-zVh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IPy-fE-7y0" secondAttribute="trailing" constant="16" id="cry-9v-tEu"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="leading" secondItem="bKL-j1-K86" secondAttribute="trailing" constant="8" symbolic="YES" id="ddB-0Z-lFv"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="doW-KT-wlR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KeS-3z-lfs" secondAttribute="trailing" constant="310" id="hwa-VO-O4s"/>
+                            <constraint firstItem="tCT-2e-t28" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="ivH-Lk-Hdg"/>
+                            <constraint firstItem="KeS-3z-lfs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66.5" id="jDy-d1-dna"/>
+                            <constraint firstItem="Ngm-Zs-eAF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lJk-pa-f2V"/>
+                            <constraint firstItem="IPy-fE-7y0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rnQ-VA-KaV"/>
+                            <constraint firstItem="VMT-7K-4fJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="uR3-PB-v8s"/>
+                            <constraint firstItem="KeS-3z-lfs" firstAttribute="top" secondItem="bKL-j1-K86" secondAttribute="bottom" constant="27" id="x5A-X4-gzB"/>
+                            <constraint firstItem="bKL-j1-K86" firstAttribute="centerY" secondItem="VMT-7K-4fJ" secondAttribute="centerY" id="zdu-8J-Ij4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnCreateCourier" destination="IPy-fE-7y0" id="Jdu-4c-9cj"/>
+                        <outlet property="btnUpdateLocation" destination="wv7-OQ-wv8" id="Jaa-h7-d0V"/>
+                        <outlet property="courierInfoLabel" destination="Ngm-Zs-eAF" id="aiE-j4-3fH"/>
+                        <outlet property="log" destination="hIZ-3f-s6B" id="MeY-8q-VsW"/>
+                        <outlet property="nameField" destination="VMT-7K-4fJ" id="YOf-rv-Alu"/>
+                        <outlet property="phoneField" destination="tCT-2e-t28" id="ar9-4G-VK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>
