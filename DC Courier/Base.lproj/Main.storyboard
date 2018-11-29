@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKL-j1-K86">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKL-j1-K86">
                                 <rect key="frame" x="16" y="39" width="45" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-3z-lfs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тел." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeS-3z-lfs">
                                 <rect key="frame" x="16" y="86.5" width="49" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -82,13 +82,47 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-3f-s6B">
-                                <rect key="frame" x="16" y="269" width="343" height="378"/>
+                                <rect key="frame" x="18" y="494" width="343" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-fo-eCi">
+                                <rect key="frame" x="16" y="399" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.64999884370000005" green="0.79830765719999996" blue="0.30183151359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <state key="normal" title="Создать заказ">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnCreateCourierClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Owk-3Z-Mrr"/>
+                                </connections>
+                            </button>
+                            <searchBar tag="1" contentMode="redraw" fixedFrame="YES" restorationIdentifier="from" searchBarStyle="minimal" placeholder="Откуда" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-6t-SHd">
+                                <rect key="frame" x="16" y="264" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" red="0.64999884370000005" green="0.79830765719999996" blue="0.30183151359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PlX-WE-gcs"/>
+                                </connections>
+                            </searchBar>
+                            <searchBar tag="2" contentMode="redraw" fixedFrame="YES" restorationIdentifier="to" searchBarStyle="minimal" placeholder="Куда" showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-B6-XiE">
+                                <rect key="frame" x="16" y="333" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="weG-3q-uaX"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -124,15 +158,35 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="btnCreateCourier" destination="IPy-fE-7y0" id="Jdu-4c-9cj"/>
-                        <outlet property="btnUpdateLocation" destination="wv7-OQ-wv8" id="Jaa-h7-d0V"/>
+                        <outlet property="btnCreateCourier" destination="IPy-fE-7y0" id="api-Xj-EZ8"/>
+                        <outlet property="btnCreateOrder" destination="Sgb-fo-eCi" id="60C-z9-Dx1"/>
+                        <outlet property="btnUpdateLocation" destination="wv7-OQ-wv8" id="Nsu-hC-zTj"/>
                         <outlet property="courierInfoLabel" destination="Ngm-Zs-eAF" id="aiE-j4-3fH"/>
+                        <outlet property="fromSearchBarController" destination="cKL-6t-SHd" id="pqA-ox-xqD"/>
                         <outlet property="log" destination="hIZ-3f-s6B" id="MeY-8q-VsW"/>
                         <outlet property="nameField" destination="VMT-7K-4fJ" id="YOf-rv-Alu"/>
                         <outlet property="phoneField" destination="tCT-2e-t28" id="ar9-4G-VK4"/>
+                        <outlet property="searchDisplayController" destination="ubW-n4-12M" id="G0l-9D-c5w"/>
+                        <outlet property="toSearchBarController" destination="K2h-B6-XiE" id="7PQ-UH-tVZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="BvM-PF-nXh">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="5Iv-od-4qH"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="dFn-zS-oyp"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="dZO-Ac-tdw"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="DEE-nz-u5C"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="ubW-n4-12M">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="qAF-mt-CQr"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="TST-L5-WgG"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="7g6-3G-ZWP"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="r11-mm-zle"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="129.98500749625188"/>
         </scene>

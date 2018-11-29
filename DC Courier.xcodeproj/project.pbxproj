@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55C6D27D16EA0F3A822B6495 /* Pods_DC_Courier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5E5F9CA81936783763C58B /* Pods_DC_Courier.framework */; };
 		A71499F921A9DF84005B4110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71499F821A9DF84005B4110 /* AppDelegate.swift */; };
 		A71499FB21A9DF84005B4110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71499FA21A9DF84005B4110 /* ViewController.swift */; };
 		A71499FE21A9DF84005B4110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A71499FC21A9DF84005B4110 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		A7149A0F21A9F3F4005B4110 /* Alamofire.framework in Headers */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
 		A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A792F09F21AF299800A3F150 /* Pods_DC_Courier.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF5E5F9CA81936783763C58B /* Pods_DC_Courier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7A6C3AB21AAFB5E00E700D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; };
 		A7A6C3AC21AAFB5E00E700D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A792F09F21AF299800A3F150 /* Pods_DC_Courier.framework in CopyFiles */,
 				A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */,
 				A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */,
 			);
@@ -34,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7D507DA2A56C63F7B6747925 /* Pods-DC Courier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC Courier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier.debug.xcconfig"; sourceTree = "<group>"; };
 		A71499F521A9DF84005B4110 /* DC Courier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DC Courier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71499F821A9DF84005B4110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A71499FA21A9DF84005B4110 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 		A7149A0421A9DF85005B4110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7149A0B21A9EEE1005B4110 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		DF5E5F9CA81936783763C58B /* Pods_DC_Courier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DC_Courier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7CF398FE45AC8FC7205300 /* Pods-DC Courier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DC Courier.release.xcconfig"; path = "Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,18 +58,29 @@
 			files = (
 				A7A6C3AB21AAFB5E00E700D2 /* SwiftyJSON.framework in Frameworks */,
 				A7A6C3AC21AAFB5E00E700D2 /* Alamofire.framework in Frameworks */,
+				55C6D27D16EA0F3A822B6495 /* Pods_DC_Courier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F9CD2140B0A22DEDA9D8F4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D507DA2A56C63F7B6747925 /* Pods-DC Courier.debug.xcconfig */,
+				EA7CF398FE45AC8FC7205300 /* Pods-DC Courier.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A71499EC21A9DF84005B4110 = {
 			isa = PBXGroup;
 			children = (
 				A71499F721A9DF84005B4110 /* DC Courier */,
 				A71499F621A9DF84005B4110 /* Products */,
 				A7149A0A21A9EEE1005B4110 /* Frameworks */,
+				5F9CD2140B0A22DEDA9D8F4D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +110,7 @@
 			children = (
 				A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */,
 				A7149A0B21A9EEE1005B4110 /* Alamofire.framework */,
+				DF5E5F9CA81936783763C58B /* Pods_DC_Courier.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,12 +133,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7149A0721A9DF85005B4110 /* Build configuration list for PBXNativeTarget "DC Courier" */;
 			buildPhases = (
+				B293D197DD857CB34B6A7605 /* [CP] Check Pods Manifest.lock */,
 				A7149A0E21A9F3EB005B4110 /* Headers */,
 				A71499F121A9DF84005B4110 /* Sources */,
 				A71499F221A9DF84005B4110 /* Frameworks */,
 				A71499F321A9DF84005B4110 /* Resources */,
 				A7149A0D21A9EF03005B4110 /* ShellScript */,
 				A7149A1421A9FFD2005B4110 /* CopyFiles */,
+				FA8119D8F6BC88D90B1CE6FA /* [CP] Copy Pods Resources */,
+				7451991FAC34439069FC384A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +204,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7451991FAC34439069FC384A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A7149A0D21A9EF03005B4110 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -201,6 +244,54 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		B293D197DD857CB34B6A7605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DC Courier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA8119D8F6BC88D90B1CE6FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -354,6 +445,7 @@
 		};
 		A7149A0821A9DF85005B4110 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D507DA2A56C63F7B6747925 /* Pods-DC Courier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +469,7 @@
 		};
 		A7149A0921A9DF85005B4110 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7CF398FE45AC8FC7205300 /* Pods-DC Courier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
