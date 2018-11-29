@@ -265,7 +265,7 @@ class ViewController: UIViewController, UISearchControllerDelegate {
                             self.btnCreateOrderState = .DeliverOrder
                             let json = JSON(resp.result.value ?? "{}")
                             self.orderID = json["id"].string ?? "s"
-                            self.log.text.append("Создан заказ: " + (resp.result.value as? String ?? "none") + "\n")
+                            self.log.text.append("Создан заказ: " + (self.orderID) + "\n")
                             self.store.set(self.orderID, forKey: "order")
                         case .failure(let error):
                             print(error)
