@@ -14,8 +14,6 @@
 		A7149A0021A9DF85005B4110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A71499FF21A9DF85005B4110 /* Assets.xcassets */; };
 		A7149A0321A9DF85005B4110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7149A0121A9DF85005B4110 /* LaunchScreen.storyboard */; };
 		A7149A0F21A9F3F4005B4110 /* Alamofire.framework in Headers */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
-		A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A792F09F21AF299800A3F150 /* Pods_DC_Courier.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF5E5F9CA81936783763C58B /* Pods_DC_Courier.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7A6C3AB21AAFB5E00E700D2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A1A21AA0A16005B4110 /* SwiftyJSON.framework */; };
 		A7A6C3AC21AAFB5E00E700D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7149A0B21A9EEE1005B4110 /* Alamofire.framework */; };
@@ -29,8 +27,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A792F09F21AF299800A3F150 /* Pods_DC_Courier.framework in CopyFiles */,
-				A7149A1C21AA0A2B005B4110 /* SwiftyJSON.framework in CopyFiles */,
-				A7149A1521A9FFEF005B4110 /* Alamofire.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,13 +209,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
