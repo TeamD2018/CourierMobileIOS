@@ -134,7 +134,6 @@
 				A71499F121A9DF84005B4110 /* Sources */,
 				A71499F221A9DF84005B4110 /* Frameworks */,
 				A71499F321A9DF84005B4110 /* Resources */,
-				A7149A0D21A9EF03005B4110 /* ShellScript */,
 				A7149A1421A9FFD2005B4110 /* CopyFiles */,
 				FA8119D8F6BC88D90B1CE6FA /* [CP] Copy Pods Resources */,
 				7451991FAC34439069FC384A /* [CP] Embed Pods Frameworks */,
@@ -210,36 +209,21 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DC Courier/Pods-DC Courier-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		A7149A0D21A9EF03005B4110 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		B293D197DD857CB34B6A7605 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
