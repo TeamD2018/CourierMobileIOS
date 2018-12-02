@@ -6,4 +6,5 @@ target 'DC Courier' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
   pod "SearchTextField"
+  pod 'Alamofire', '~> 4.7'
 end
